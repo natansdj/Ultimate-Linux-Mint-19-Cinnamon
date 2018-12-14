@@ -24,4 +24,6 @@ composer about
 # (optional) Update composer:
 sudo composer self-update
 
+sudo chown -R $USER. $HOME/.composer
+
 exit $RESULT
