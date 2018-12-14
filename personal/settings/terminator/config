@@ -1,0 +1,294 @@
+[global_config]
+  always_split_with_profile = True
+  borderless = True
+  enabled_plugins = CustomCommandsMenu, APTURLHandler, LaunchpadCodeURLHandler
+  handle_size = 1
+  inactive_color_offset = 0.74
+  title_font = Source Sans Pro 10
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#adadad"
+  title_inactive_fg_color = "#424242"
+  title_use_system_font = False
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = cb9ac67b-d72d-435e-ada7-40772cda6a84
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:23
+      size = 1366, 745
+      title = vt745@X450JF ~/Documents
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 366
+      ratio = 0.491946308725
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 680
+      ratio = 0.498169838946
+      type = HPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 211
+      ratio = 0.577868852459
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child3
+      position = 197
+      ratio = 0.290441176471
+      type = HPaned
+    [[[child9]]]
+      order = 1
+      parent = child1
+      position = 680
+      ratio = 0.498169838946
+      type = HPaned
+    [[[terminal10]]]
+      directory = ""
+      order = 0
+      parent = child9
+      profile = zsh
+      type = Terminal
+      uuid = fd4bbba6-adc5-48a4-80a9-d060dd4da639
+    [[[terminal11]]]
+      directory = Documents/_htdocs
+      order = 1
+      parent = child9
+      profile = zsh
+      type = Terminal
+      uuid = 3118fa66-c615-476e-8288-fab4bef8c92f
+    [[[terminal4]]]
+      command = top
+      directory = ""
+      order = 0
+      parent = child3
+      profile = bash
+      title = system
+      type = Terminal
+      uuid = cb9ac67b-d72d-435e-ada7-40772cda6a84
+    [[[terminal6]]]
+      command = '''watch -n 1 'cat /proc/cpuinfo | grep "MHz"''''
+      directory = ""
+      order = 0
+      parent = child5
+      profile = bash
+      type = Terminal
+      uuid = 0032293e-b6c7-4d3b-8422-6fee16becad2
+    [[[terminal7]]]
+      command = ""
+      directory = ""
+      order = 1
+      parent = child5
+      profile = zsh
+      type = Terminal
+      uuid = 5b6263be-96ea-4804-96de-04be8bf2ac67
+    [[[terminal8]]]
+      command = ""
+      directory = Documents
+      order = 1
+      parent = child2
+      profile = zsh
+      type = Terminal
+      uuid = 0d4d6697-e957-4d27-8b53-e35dfa2291c0
+  [["default #3 /w glances"]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = cb9ac67b-d72d-435e-ada7-40772cda6a84
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:23
+      size = 1366, 745
+      title = vt745@X450JF ~/Documents
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 366
+      ratio = 0.491946308725
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 680
+      ratio = 0.498169838946
+      type = HPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 680
+      ratio = 0.498169838946
+      type = HPaned
+    [[[terminal3]]]
+      command = glances
+      directory = ""
+      order = 0
+      parent = child2
+      profile = bash
+      title = system
+      type = Terminal
+      uuid = cb9ac67b-d72d-435e-ada7-40772cda6a84
+    [[[terminal4]]]
+      command = ""
+      directory = Documents
+      order = 1
+      parent = child2
+      profile = zsh
+      type = Terminal
+      uuid = 0d4d6697-e957-4d27-8b53-e35dfa2291c0
+    [[[terminal6]]]
+      directory = Documents/_htdocs
+      order = 0
+      parent = child5
+      profile = zsh
+      type = Terminal
+      uuid = fd4bbba6-adc5-48a4-80a9-d060dd4da639
+    [[[terminal7]]]
+      directory = ""
+      order = 1
+      parent = child5
+      profile = zsh
+      type = Terminal
+      uuid = 3118fa66-c615-476e-8288-fab4bef8c92f
+[plugins]
+  [[CustomCommandsMenu]]
+    [[[cpuinfo]]]
+      command = '''watch -n 0,5 'cat /proc/cpuinfo | grep "MHz"''''
+      enabled = True
+      name = cpuinfo
+      position = 5
+    [[[current conn]]]
+      command = watch -n 1 lsof -i
+      enabled = True
+      name = current conn
+      position = 6
+    [[[docker stats]]]
+      command = docker stats $(docker ps --format={{.Names}})
+      enabled = True
+      name = docker stats
+      position = 9
+    [[[docker stats --format]]]
+      command = 'docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.BlockIO}}"'
+      enabled = True
+      name = docker stats --format
+      position = 10
+    [[[glances]]]
+      command = glances --disable-now --disable-hddtemp --disable-network --disable-ports --disable-wifi --disable-sensors --disable-autodiscover --process-short-name --fs-free-space
+      enabled = True
+      name = glances
+      position = 12
+    [[[glances2]]]
+      command = glances --disable-alert --disable-amps --disable-now --disable-hddtemp --disable-network --disable-ports --disable-wifi --disable-sensors --disable-autodiscover --process-short-name --fs-free-space --config /etc/glances/glances.conf
+      enabled = True
+      name = glances2
+      position = 13
+    [[[nethogs eth]]]
+      command = sudo nethogs enp4s0
+      enabled = True
+      name = nethogs eth
+      position = 1
+    [[[nethogs wlan]]]
+      command = sudo nethogs wlp3s0
+      enabled = True
+      name = nethogs wlan
+      position = 2
+    [[[network logs]]]
+      command = journalctl -u NetworkManager -f
+      enabled = True
+      name = network logs
+      position = 8
+    [[[sensors CPU]]]
+      command = "watch -n 0,5 'sensors coretemp-isa-0000'"
+      enabled = True
+      name = sensors CPU
+      position = 11
+    [[[tcpdump 1723 / 47]]]
+      command = tcpdump -i wlp3s0 -s 0 tcp port 1723 or proto 47
+      enabled = True
+      name = tcpdump 1723 / 47
+      position = 7
+    [[[top]]]
+      command = top
+      enabled = True
+      name = top
+      position = 0
+    [[[vnstat eth]]]
+      command = vnstat -l -d -ru -i enp4s0
+      enabled = True
+      name = vnstat eth
+      position = 3
+    [[[vnstat wlan]]]
+      command = vnstat -l -d -ru -i wlp3s0
+      enabled = True
+      name = vnstat wlan
+      position = 4
+[profiles]
+  [[default]]
+    background_color = "#300a24"
+    background_darkness = 0.88
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#c2c2c2"
+    custom_command = /bin/zsh -l
+    exit_action = restart
+    font = Monospace 9
+    foreground_color = "#ffffff"
+    icon_bell = False
+    login_shell = True
+    scrollback_infinite = True
+    scrollback_lines = 1500
+    scrollbar_position = hidden
+    show_titlebar = False
+    update_records = False
+    use_custom_command = True
+    use_system_font = False
+    visible_bell = True
+  [[bash]]
+    background_color = "#300a24"
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#c2c2c2"
+    custom_command = /bin/bash -l
+    font = Monospace 9
+    foreground_color = "#ffffff"
+    icon_bell = False
+    login_shell = True
+    scrollback_infinite = True
+    scrollback_lines = 1500
+    scrollbar_position = hidden
+    show_titlebar = False
+    update_records = False
+    use_system_font = False
+    visible_bell = True
+  [[zsh]]
+    background_color = "#300a24"
+    background_darkness = 0.87
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#c2c2c2"
+    custom_command = /bin/zsh -l
+    exit_action = restart
+    font = Monospace 9
+    foreground_color = "#ffffff"
+    icon_bell = False
+    login_shell = True
+    scrollback_infinite = True
+    scrollback_lines = 1500
+    scrollbar_position = hidden
+    show_titlebar = False
+    update_records = False
+    use_custom_command = True
+    use_system_font = False
+    visible_bell = True

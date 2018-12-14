@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=PhpStorm 2017.2
+Terminal=false
+Name=PhpStorm 2017
+Exec=/usr/local/bin/phpstorm2017
+Type=Application
+Categories=Development;
+Icon=/opt/phpstorm2017/bin/phpstorm.png
+Hidden=false
+NoDisplay=false
