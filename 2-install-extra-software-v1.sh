@@ -73,7 +73,7 @@
 
 # Teamviewer
 
-##sh install-teamviewer-v1.sh
+#sh install-teamviewer-v1.sh
 
 
 # Variety
@@ -118,7 +118,7 @@ sh install-deluge-v1.sh
 
 # Bleachbit
 
-sh install-bleachbit-v1.sh
+##sh install-bleachbit-v1.sh
 
 # Docker
 
@@ -129,7 +129,7 @@ sh install-bleachbit-v1.sh
 ##sh install-phpbrew-v1.sh
 ##sh install-composer-v1.sh
 
-
+##sh install-terminator-v1.sh
 
 
 echo "################################################################"

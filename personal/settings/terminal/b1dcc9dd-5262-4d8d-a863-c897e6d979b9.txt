@@ -1,0 +1,15 @@
+[/]
+foreground-color='rgb(131,148,150)'
+visible-name='default'
+login-shell=false
+custom-command='/bin/bash --login'
+default-size-rows=35
+default-size-columns=120
+use-system-font=false
+use-custom-command=false
+use-theme-colors=true
+use-transparent-background=false
+font='Monospace 9'
+use-theme-transparency=false
+background-color='rgb(0,43,54)'
+background-transparency-percent=8
