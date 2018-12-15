@@ -22,6 +22,7 @@ sudo apt-get install -y plank ppa-purge screenfetch shutter
 sudo apt-get install -y vlc vnstat
 
 #operating specific software
+sudo apt-get install -y cifs-utils smbclient
 
 # sudo apt-get install nemo-compare -y
 

@@ -34,6 +34,20 @@ sudo chmod +x /usr/local/bin/docker-compose
 ###adding the current user to the docker group:
 sudo usermod -a -G docker $USER
 
+###adding dev network
+docker network create -d bridge --subnet 172.18.0.0/16 \
+--gateway=172.18.0.1 \
+--opt com.docker.network.bridge.enable_icc=true \
+--opt com.docker.network.bridge.enable_ip_masquerade=true \
+--opt com.docker.network.bridge.host_binding_ipv4=0.0.0.0 \
+--opt com.docker.network.driver.mtu=1500 \
+dev
+
+
+
+
+
 echo "################################################################"
 echo "###################    Docker Installed      ###################"
 echo "################################################################"
+
