@@ -74,12 +74,30 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 git config --global alias.patch "!git --no-pager diff --no-color"
 git config --global alias.permission-reset "!git diff -p HEAD~1 | grep -E \"^(diff|old mode|new mode)\" | sed -e \"s/^old/NEW/;s/^new/old/;s/^NEW/new/\" | git apply"
 #sudo git config --system core.editor nano
-git config --global credential.helper "/usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring"
 git config --global http.postBuffer "524288000 #default : 1M"
 git config --global http.maxRequestBuffer "100000000 #default : 10M"
 #git config --global credential.helper 'cache --timeout=18000'
 #git config --global push.default simple
 
+#####
+#git config --global credential.helper "/usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring"
+#
+#gnome-credential-helper is now deprecated.
+#
+#Instead, use libsecret. If it's not already buil-in your ubuntu, use the following procedure:
+#
+#You can install libsecret and the development libraries with:
+#
+sudo apt-get install libsecret-1-0 libsecret-1-dev
+
+#
+#Then you need to build the credential manager
+#
+cd /usr/share/doc/git/contrib/credential/libsecret
+sudo make
+
+#Finally, you should point git to the newly created file in your config:
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"

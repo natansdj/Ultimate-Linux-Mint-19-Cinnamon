@@ -37,8 +37,21 @@ sudo mv /tmp/phpbrew /usr/local/bin/phpbrew
 
 phpbrew init
 
-phpbrew install php-7.2 as php-7.2 +default+zlib+soap+fpm+iconv+exif+gd
+######################################################################################################
+## FOR PHP 7.2
+sudo apt install -y libcurl4-openssl-dev
+sudo apt install -y libcurl4-gnutls-dev
+## PHP 7.2 libcurl workaround issue https://stackoverflow.com/q/42300393
+sudo ln -s /usr/include/x86_64-linux-gnu/curl /usr/local/include/curl
+phpbrew install php-7.2 as php-7.2 +default+mysql+zlib+soap+fpm+iconv+exif+gd
+
+## PHP 7.1
+#phpbrew install php-7.1 as php-7.1 +default+mysql+zlib+soap+iconv+exif+gd
 
 phpbrew ext install redis stable
 phpbrew ext install xdebug stable
+
+echo "################################################################"
+echo "#################    PhpBrew installed      ####################"
+echo "################################################################"
 

@@ -13,7 +13,7 @@
 
 # Atom
 
-##sh install-atom-v1.sh
+sh install-atom-v1.sh
 
 
 
@@ -25,7 +25,7 @@
 
 # Google Chrome
 
-##sh install-google-chrome-v1.sh
+sh install-google-chrome-v1.sh
 
 
 
@@ -53,7 +53,7 @@
 
 # Redshift
 
-##sh install-redshift-v1.sh
+sh install-redshift-v1.sh
 
 
 # Simplescreenrecorder
@@ -63,7 +63,7 @@
 
 # Spotify
 
-##sh install-spotify-v2.sh
+sh install-spotify-v2.sh
 
 
 # Sublime text 3
@@ -90,10 +90,10 @@
 #sh hardcodefixer-v1.sh
 
 # Postman
-##sh install-postman-v1.sh
+sh install-postman-v1.sh
 
 # Oracle
-##sh install-oracle-v1.sh
+sh install-oracle-v1.sh
 
 # Slack
 sh install-slack-v1.sh
@@ -105,7 +105,7 @@ sh install-skype-v1.sh
 sh install-gitkraken-v1.sh
 
 # ZSH
-##sh install-zsh-v1.sh
+sh install-zsh-v1.sh
 
 # Tean Viewer
 sh install-teamviewer-v1.sh
@@ -118,18 +118,18 @@ sh install-deluge-v1.sh
 
 # Bleachbit
 
-##sh install-bleachbit-v1.sh
+sh install-bleachbit-v1.sh
 
 # Docker
 
-##sh install-docker-v1.sh
+sh install-docker-v1.sh
 
 # PHPBrew
 
-##sh install-phpbrew-v1.sh
-##sh install-composer-v1.sh
+sh install-phpbrew-v1.sh
+sh install-composer-v1.sh
 
-##sh install-terminator-v1.sh
+sh install-terminator-v1.sh
 
 
 echo "################################################################"
