@@ -41,10 +41,12 @@ docker network create -d bridge --subnet 172.18.0.0/16 \
 --opt com.docker.network.bridge.enable_ip_masquerade=true \
 --opt com.docker.network.bridge.host_binding_ipv4=0.0.0.0 \
 --opt com.docker.network.driver.mtu=1500 \
+--opt com.docker.network.bridge.name="docker1" \
 dev
 
-
-
+###add xdebug for ufw
+sudo ufw enable
+sudo ufw allow in on docker1 from 172.18.0.0/24 to 172.18.0.1/32 port 9000 comment xdebug
 
 
 echo "################################################################"
