@@ -2,8 +2,6 @@
 #
 ##################################################################################################################
 # Written to be used on 64 bits computers
-# Author 	: 	Erik Dubois
-# Website 	: 	http://www.erikdubois.be
 ##################################################################################################################
 ##################################################################################################################
 #
@@ -12,24 +10,21 @@
 ##################################################################################################################
 
 
-rm /tmp/virtual-box.deb
-
-#wget http://download.virtualbox.org/virtualbox/5.1.12/virtualbox-5.1_5.1.12-112440~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
-#wget http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
-#wget http://download.virtualbox.org/virtualbox/5.1.18/virtualbox-5.1_5.1.18-114002~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
-wget https://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
-
-sudo dpkg -i /tmp/virtual-box.deb
-#gdebi /tmp/code_1.5.3-1474533365_amd64.deb
-
-
 #rm /tmp/virtual-box.deb
 
+#wget http://download.virtualbox.org/virtualbox/5.1.18/virtualbox-5.1_5.1.18-114002~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
+#wget https://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
+wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Ubuntu~bionic_amd64.deb -O /tmp/virtual-box.deb
+
+sudo dpkg -i /tmp/virtual-box.deb
+#gdebi /tmp/virtual-box.deb
+
+rm /tmp/virtual-box.deb
 
 ##################################################################################################################
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "###########    Oracle VM VirtualBox Installed      #############"
 echo "################################################################"
 
 
