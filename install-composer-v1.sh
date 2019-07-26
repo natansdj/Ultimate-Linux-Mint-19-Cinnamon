@@ -22,8 +22,10 @@ sudo mv composer.phar /usr/local/bin/composer
 composer about
 
 # (optional) Update composer:
-sudo composer self-update
+composer self-update
 
+[ -d $HOME/.composer ] || mkdir $HOME/.composer
 sudo chown -R $USER. $HOME/.composer
 
 exit $RESULT
+

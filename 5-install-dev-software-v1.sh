@@ -1,9 +1,7 @@
 #!/bin/bash
-#
+#set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
-# Author 	: 	Erik Dubois
-# Website 	: 	http://www.erikdubois.be
 ##################################################################################################################
 ##################################################################################################################
 #
@@ -11,18 +9,60 @@
 #
 ##################################################################################################################
 
-# Downloading and installing latest teamviewer
+# Linuxbrew
+#sh install-linuxbrew-v1.sh
 
-rm /tmp/teamviewer_amd64.deb
+# Postman
+# sh install-postman-v1.sh
 
-wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb -O /tmp/teamviewer_amd64.deb
-#sudo apt install -y libjpeg62:i386
-sudo dpkg -i /tmp/teamviewer_amd64.deb
+# Oracle
+#sh install-oracle-v1.sh
 
-rm /tmp/teamviewer_amd64.deb
+# Snap
+#sh install-snap-v1.sh
 
+# Slack
+#sh install-slack-v1.sh
+
+# Flameshot
+# sh install-flameshot-v1.sh
+
+# Skype
+# sh install-skype-v1.sh
+
+# Team Viewer
+sh install-teamviewer-v1.sh
+
+# Virtual Box
+sh install-virtual-box-v2.sh
+
+# Gitkraken
+# sh install-gitkraken-v2.sh
+
+# ZSH
+# sh install-zsh-v1.sh
+
+# Docker
+
+# sh install-docker-v1.sh
+
+sh install-docker-image.sh
+
+# PHPBrew
+
+# sh install-phpbrew-v1.sh
+# sh install-composer-v1.sh
+
+# sh install-terminator-v1.sh
+
+# Atom
+# sh install-atom-v1.sh
+
+
+
+#############
 
 
 echo "################################################################"
-echo "##############       teamviewer installed      #################"
+echo "###################   extra software installed  ################"
 echo "################################################################"

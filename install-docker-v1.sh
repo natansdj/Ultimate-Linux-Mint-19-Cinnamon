@@ -11,13 +11,12 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo apt-key fingerprint 0EBFCD88
 
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   bionic \
-   stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
 sudo apt-get update
-sudo apt-get install docker-ce
+apt-cache policy docker-ce
+
+sudo apt-get install -y docker-ce
 
 #rm /tmp/docker-ce.deb
 
@@ -33,6 +32,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ###adding the current user to the docker group:
 sudo usermod -a -G docker $USER
+
+###On Linux, run the following command to activate the changes to groups:
+newgrp docker
 
 ###adding dev network
 docker network create -d bridge --subnet 172.18.0.0/16 \

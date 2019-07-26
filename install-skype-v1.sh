@@ -19,6 +19,7 @@
 
 rm /tmp/skypeforlinux-64.deb
 
+###wget https://go.skype.com/skypeforlinux-64.deb -O /tmp/skypeforlinux-64.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb -O /tmp/skypeforlinux-64.deb
 sudo dpkg -i /tmp/skypeforlinux-64.deb
 sudo apt install -f

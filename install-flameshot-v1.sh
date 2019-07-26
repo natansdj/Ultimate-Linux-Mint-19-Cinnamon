@@ -6,18 +6,20 @@
 #
 ##################################################################################################################
 
-# Downloading and installing latest teamviewer
+# will not install to error....????
 
-# rm /tmp/stacer.deb
-# wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.9/stacer_1.0.9_amd64.deb -O /tmp/stacer.deb
-# sudo dpkg -i /tmp/stacer.deb
-# rm /tmp/stacer.deb
 
-sudo add-apt-repository ppa:oguzhaninan/stacer -y
-sudo apt-get update
-sudo apt-get install stacer -y
+rm /tmp/flameshot-amd64.deb
 
+wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb -O /tmp/flameshot-amd64.deb
+sudo dpkg -i /tmp/flameshot-amd64.deb
+
+rm /tmp/flameshot-amd64.deb
+
+##################################################################################################################
 
 echo "################################################################"
-echo "##############       stacer installed      #################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"
+
+

@@ -3,7 +3,8 @@ set -e
 
 [ -d $HOME"/.config/terminator" ] || mkdir -p $HOME"/.config/terminator"
 
-cp settings/terminator/config ~/.config/terminator/
+d="~/.config/terminator/"
+mkdir -p "$d" && cp -r "./personal/settings/terminator/config" "$d"
 
 echo "################################################################"
 echo "########       terminator  settings installed     ##############"

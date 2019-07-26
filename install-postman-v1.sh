@@ -2,7 +2,7 @@
 #set -e
 
 POSTMANTAR="postman-latest-x64.tar.gz"
-POSTMANDIR="/opt/Postman/"
+POSTMANDIR="/opt/"
 rm tmp/$POSTMANTAR
 
 if [ ! -d "$POSTMANTAR" ]; then
@@ -17,12 +17,11 @@ fi
 ###Create dir if not exists
 [ -d "$POSTMANDIR" ] || sudo mkdir -p $POSTMANDIR
 
-
 sudo tar -xzf /tmp/$POSTMANTAR -C "$POSTMANDIR"
-sudo ln -s $POSTMANDIRPostman /usr/local/bin/postman
-desktop-file-install --dir=$HOME/.local/share/applications ./personal/setting/postman/postman.desktop
+sudo ln -s $POSTMANDIRPostman/Postman /usr/local/bin/postman
+desktop-file-install --dir=$HOME/.local/share/applications ./personal/settings/postman/postman.desktop
 
-rm /tmp/$POSTMANTAR
+# rm /tmp/$POSTMANTAR
 
 
 echo "################################################################"

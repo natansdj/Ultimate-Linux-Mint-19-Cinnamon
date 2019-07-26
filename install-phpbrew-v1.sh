@@ -25,7 +25,10 @@ sudo apt install -y \
   libcurl4-gnutls-dev
 
 #added for gd extension installation
-sudo apt install -y libpng-dev
+#sudo apt install -y libpng-dev
+
+###dependencies
+sudo apt install -y libmcrypt4
 
 rm /tmp/phpbrew
 
@@ -41,6 +44,7 @@ phpbrew init
 ## FOR PHP 7.2
 sudo apt install -y libcurl4-openssl-dev
 sudo apt install -y libcurl4-gnutls-dev
+
 ## PHP 7.2 libcurl workaround issue https://stackoverflow.com/q/42300393
 sudo ln -s /usr/include/x86_64-linux-gnu/curl /usr/local/include/curl
 phpbrew install php-7.2 as php-7.2 +default+mysql+zlib+soap+fpm+iconv+exif+gd
