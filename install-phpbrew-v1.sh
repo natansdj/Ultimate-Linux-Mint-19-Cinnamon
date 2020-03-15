@@ -21,8 +21,8 @@ sudo apt install -y \
   build-essential \
   libmhash-dev \
   libmhash2 \
-  libxslt1-dev \
-  libcurl4-gnutls-dev
+  libxslt1-dev
+#  libcurl4-gnutls-dev
 
 #added for gd extension installation
 #sudo apt install -y libpng-dev
@@ -50,7 +50,7 @@ sudo ln -s /usr/include/x86_64-linux-gnu/curl /usr/local/include/curl
 phpbrew install php-7.2 as php-7.2 +default+mysql+zlib+soap+fpm+iconv+exif+gd
 
 ## PHP 7.1
-#phpbrew install php-7.1 as php-7.1 +default+mysql+zlib+soap+iconv+exif+gd
+# phpbrew install php-7.1 as php-7.1 +default+mysql+zlib+soap+iconv+exif+gd
 
 phpbrew ext install redis stable
 phpbrew ext install xdebug stable
@@ -58,4 +58,3 @@ phpbrew ext install xdebug stable
 echo "################################################################"
 echo "#################    PhpBrew installed      ####################"
 echo "################################################################"
-

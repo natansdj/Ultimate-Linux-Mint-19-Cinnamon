@@ -36,7 +36,7 @@
 echo "TAKE CARE! You will be left with only one kernel - the current one!"
 
 
-dpkg --list | grep linux-image | awk '{ print $2 }' | sort -V | sed -n '/'`uname -r`'/q;p' | xargs sudo apt-get -y purge
+dpkg --list | grep linux-image | awk '{ print $2 }' | sort -V | sed -n '/'`uname -r`'/q;p' | xargs echo sudo apt-get -y purge
 
 echo "################################################################"
 echo "############## old kernels have been deleted     ###############"

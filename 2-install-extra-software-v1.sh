@@ -12,9 +12,11 @@
 # Brackets
 #sh install-brackets-v1.sh
 
+# GIT
+sh setup-git-v1.sh
 
 # Google Chrome
-#sh install-google-chrome-v1.sh
+sh install-google-chrome-v1.sh
 
 
 # Gradio
@@ -30,7 +32,7 @@
 
 
 # Neofetch
-#sh install-neofetch-v1.sh
+sh install-neofetch-v1.sh
 
 
 # Peek
@@ -50,7 +52,7 @@ sh install-clipgrab-v1.sh
 
 
 # Spotify
-# sh install-spotify-v2.sh
+sh install-spotify-v2.sh
 
 
 # Sublime text 3
@@ -68,10 +70,10 @@ sh install-clipgrab-v1.sh
 #sh hardcodefixer-v1.sh
 
 # Deluge
-# sh install-deluge-v1.sh
+sh install-deluge-v1.sh
 
 # Bleachbit
-# sh install-bleachbit-v1.sh
+sh install-bleachbit-v1.sh
 
 # XDM download manager
 sh install-xdm-v1.sh
