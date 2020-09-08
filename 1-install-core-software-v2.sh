@@ -15,7 +15,8 @@ sudo apt-get install -y curl dconf-cli dconf-editor focuswriter geany
 #sudo apt-get install -y glances hardinfo inkscape meld
 sudo apt-get install -y gparted grsync
 #sudo apt-get install -y openshot pinta plank ppa-purge radiotray screenruler screenfetch scrot shutter slurm synapse
-sudo apt-get install -y plank ppa-purge screenfetch shutter
+sudo apt-get install -y plank ppa-purge screenfetch
+#sudo apt-get install -y shutter
 #sudo apt-get install -y thunar
 sudo apt-get install -y vlc vnstat
 

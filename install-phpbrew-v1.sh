@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sudo apt install -y \
-  php7.2 \
-  php7.2-curl \
-  php7.2-json \
-  php7.2-cgi \
-  php7.2-fpm \
+  php7.4 \
+  php7.4-curl \
+  php7.4-json \
+  php7.4-cgi \
+  php7.4-fpm \
   autoconf \
   automake \
   libxml2-dev \
@@ -47,13 +47,13 @@ sudo apt install -y libcurl4-gnutls-dev
 
 ## PHP 7.2 libcurl workaround issue https://stackoverflow.com/q/42300393
 sudo ln -s /usr/include/x86_64-linux-gnu/curl /usr/local/include/curl
-phpbrew install php-7.2 as php-7.2 +default+mysql+zlib+soap+fpm+iconv+exif+gd
+#phpbrew install php-7.2 as php-7.2 +default+mysql+zlib+soap+fpm+iconv+exif+gd
 
 ## PHP 7.1
 # phpbrew install php-7.1 as php-7.1 +default+mysql+zlib+soap+iconv+exif+gd
 
-phpbrew ext install redis stable
-phpbrew ext install xdebug stable
+#phpbrew ext install redis stable
+#phpbrew ext install xdebug stable
 
 echo "################################################################"
 echo "#################    PhpBrew installed      ####################"

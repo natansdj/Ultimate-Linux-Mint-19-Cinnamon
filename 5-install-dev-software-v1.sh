@@ -10,7 +10,7 @@
 ##################################################################################################################
 
 # Linuxbrew
-sh install-linuxbrew-v1.sh
+#sh install-linuxbrew-v1.sh
 
 # Postman
 sh install-postman-v1.sh
@@ -19,10 +19,10 @@ sh install-postman-v1.sh
 #sh install-oracle-v1.sh
 
 # Snap
-sh install-snap-v1.sh
+#sh install-snap-v1.sh
 
 # Slack
-sh install-slack-v1.sh
+#sh install-slack-v1.sh
 
 # Flameshot
 sh install-flameshot-v1.sh
@@ -31,7 +31,7 @@ sh install-flameshot-v1.sh
 # sh install-skype-v1.sh
 
 # Team Viewer
-sh install-teamviewer-v1.sh
+#sh install-teamviewer-v1.sh
 
 # Virtual Box
 sh install-virtual-box-v2.sh
