@@ -1,4 +1,6 @@
 [/]
+animate-app-switch=false
+animate-window-launch=false
 appicon-margin=2
 appicon-padding=3
 available-monitors=[0]
@@ -20,6 +22,7 @@ dot-style-unfocused='DASHES'
 focus-highlight=true
 focus-highlight-color='#eeeeee'
 focus-highlight-dominant=false
+force-check-update=false
 group-apps=true
 group-apps-label-font-color='#dddddd'
 group-apps-label-font-color-minimized='#dddddd'
@@ -32,7 +35,7 @@ panel-positions='{"0":"TOP"}'
 panel-size=32
 shift-click-action='MINIMIZE'
 shift-middle-click-action='LAUNCH'
-show-appmenu=true
+show-appmenu=false
 show-favorites=true
 show-favorites-all-monitors=false
 show-running-apps=true
